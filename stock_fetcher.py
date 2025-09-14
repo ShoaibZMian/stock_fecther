@@ -27,6 +27,7 @@ def fetch_stock_data(ticker, start_date, end_date, output_file=None):
         # Tilføj ticker kolonne
         data['Ticker'] = ticker
         
+        
         # Reorganiser kolonner
         data = data[['Ticker', 'Open', 'High', 'Low', 'Close', 'Volume']]
         
